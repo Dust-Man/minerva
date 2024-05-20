@@ -1,0 +1,251 @@
+@import url('https://fonts.googleapis.com/css2?family=League+Spartan:wght@100..900&display=swap');
+
+:root{
+    --dark_color: #292928;
+    --light_color: #f4f4f4;
+    --highlight_color: #DD7230;
+    --second_highlight_color: #376996;
+    --principal_font: "League Spartan", sans-serif;
+}
+*{
+    box-sizing: border-box;
+}
+body{
+    margin: 0;
+    background-color: var(--light_color);
+    font-family: var(--principal_font);
+    font-size: 1.1em;
+    color: var(--dark_color);
+}
+
+
+
+.text{
+    padding: 0 20px ;
+    font-size: 20px;
+   
+}
+.item_space{
+    padding-bottom: 1rem;
+    text-align: justify;
+}
+/*=====HEADER=====*/
+header{
+    width: 100%;
+    margin-top: 5px;
+}
+.header__logo-container{
+    width: 100%;
+    text-align: center;
+    border-bottom: 1px solid var(--dark_color) ;
+}
+.header__logo{
+    width: 500px;
+}
+.header__nav {
+    width: 100%;
+    border-bottom: 1px solid var(--dark_color);
+    position: -webkit-sticky; 
+    position: sticky;
+    top: 0;
+    background-color: var(--light_color);
+    padding: 1vh 0 ;
+    z-index: 9999;
+}
+
+.header__nav ul{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    align-items: center;
+    padding-inline-start: 0;
+    margin-block: 0;
+    height: 100%;
+    margin: 5px 0;
+}
+.header__nav li{
+    list-style: none;
+    padding: .5rem 1rem ;
+    color: var(--dark_color);
+
+}
+.header__nav a{
+    text-decoration: underline;
+    color: #292928;
+}
+.header__nav a:hover {
+    color: #DD7230;
+}
+/*=====HERO=====*/
+.hero{
+    width: 100%;
+    height: 80vh ;
+    background-image: url(https://www.ancient-origins.es/sites/default/files/field/image/Portada-diosa-romana-Minerva.jpg);
+    background-size: cover;
+    background-position: left;
+    background-attachment: fixed;
+    color: var(--light_color);
+}
+.hero__content{
+    height: 100%;
+    width: 100%;
+    background-color: #000a;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.relleno{
+    width: 100%;
+    height: 100vh;
+}
+.hero__frase{
+    margin: 0;
+    font-size: 3em;
+    padding: 5vh;
+    font-weight: 500;
+    
+}
+.hero__caption{
+    padding: 0 7vh;
+    font-size: 2em;
+    font-weight: 200;
+}
+
+/*=====BUTTONS=====*/
+.call-button{
+    font-size: 1em;
+    padding: 1rem;
+    border-radius: 50vw;
+    background-color: var(--highlight_color);
+    text-decoration: none;
+    color: var(--light_color);
+    display: block;
+    transition: transform 0.3s ease;
+}
+.call-button:hover{
+    transform: scale(1.03)
+}
+/*=====ABOUT=====*/
+#sobre_minerva{
+    display: flex;
+    align-items: center;
+    height: 100vh;
+}
+
+.about__image img{
+    width: 100%;
+}
+
+/*=====QUE QUIERES APRENDER=====*/
+#que_quieres_aprender{
+    border-top: 1px solid;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.--card{
+    margin: 20px;
+    width: 50%;
+}
+
+.card-container{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    padding: 20px;
+}
+.card{
+    width: 100%;
+    max-width: 300px;
+    border-radius: 5px;
+    border: 1px solid;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.card img{
+    width: 80%;
+}
+.card h2{
+    text-align: center;
+}
+
+/*=====MATEMATICAS=====*/
+.container-to-read{
+    width: 100%;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.asesorias-pasadas iframe{
+    width: 100%;
+    max-width: 560px;
+
+}
+.center{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+@media screen and (max-width:1100px){
+    #sobre_minerva{
+        flex-direction:column;
+        height: auto;
+    }
+    #que_quieres_aprender{
+        height: auto;
+    }
+    .pad{
+        padding-top: 5rem;
+    }
+}
+/*=====GENERALES=====*/
+.title,.subtitle{
+    text-align: center;
+    padding-top: 1rem;
+}
+.title{
+    font-size: 30px;
+}
+.subtitle{
+    font-size: 25px;
+}
+.--bg-highlight-two{
+    background-color: var(--second_highlight_color);
+}
+.--bg-highlight-one{
+    background-color: var(--highlight_color);
+}
+.--highlight-one{
+    color: var(--highlight_color);
+}
+.border-top{
+    border-top: 1px solid var(--dark_color);
+}
+@media screen and (max-width:500px) {
+    .header__logo{
+        width: 100%;
+    }
+
+    .hero{
+        height: auto;
+    }
+    .call-button{
+        margin-bottom: 20px;
+    }
+    
+}
+
