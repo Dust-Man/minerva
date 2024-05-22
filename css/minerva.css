@@ -212,6 +212,55 @@ header{
         padding-top: 5rem;
     }
 }
+/*=====TABLA DE POSICIONES=====*/
+.fila-tabla-posiciones{
+    padding: .8rem 0;
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    font-size: 1.2em;
+    
+}
+.--cabecera-tabla-posiciones{
+    background-color: var(--highlight_color);
+    border-color: var(--highlight_color);
+    border-bottom-right-radius: 0;
+    border-bottom-left-radius: 0;
+    font-weight: 600;
+}
+.--top{
+    padding: 6px;
+    border: 1px solid ;
+    border-radius: 40%;
+}
+.--one{
+    padding: 8px;
+    background-color: gold;
+    border-color: gold;
+}
+.--two{
+    background-color: silver;
+    border-color: silver;
+    
+}
+.--three{
+    background-color: #c86417;
+    border-color: #c86417 ;
+    
+}
+.fila-tabla-posiciones__posicion{
+    
+    
+}
+.fila-tabla-posiciones__nombre{
+    
+}
+.fila-tabla-posiciones__puntos{
+   
+}
+.tabla-posiciones{
+    padding: 20px;
+}
 /*=====GENERALES=====*/
 .title,.subtitle{
     text-align: center;
@@ -235,6 +284,14 @@ header{
 .border-top{
     border-top: 1px solid var(--dark_color);
 }
+.--full_size{
+    max-width: 100%;
+}
+.--no_top_border_radius{
+    border-top-left-radius:0 ;
+    border-top-right-radius:0 ;
+}
+
 @media screen and (max-width:500px) {
     .header__logo{
         width: 100%;
