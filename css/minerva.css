@@ -49,15 +49,7 @@ i{
     font-size: 25px;
     margin: 10px;
 }
-.--bg-highlight-two{
-    background-color: var(--second_highlight_color);
-}
-.--bg-highlight-one{
-    background-color: var(--highlight_color);
-}
-.--highlight-one{
-    color: var(--highlight_color);
-}
+
 .border-top{
     border-top: 1px solid var(--dark_color);
 }
@@ -107,6 +99,9 @@ i{
 .--big-card{
     max-width: unset;
 }
+
+
+
 /*=====CALL BUTTONS====*/
 .call-button{
     text-align: center;
@@ -131,6 +126,16 @@ i{
     margin: 20px;
     width: 50%;
     padding: .7rem;
+}
+
+.--bg-highlight-two{
+    background-color: var(--second_highlight_color);
+}
+.--bg-highlight-one{
+    background-color: var(--highlight_color);
+}
+.--highlight-one{
+    color: var(--highlight_color);
 }
 /*=====HEADER=====*/
 header{
