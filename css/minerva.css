@@ -18,16 +18,118 @@ body{
     color: var(--dark_color);
 }
 
+/*=====CARD====*/
+.card-container{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    padding: 20px;
+}
+.card{
+    width: 100%;
+    max-width: 300px;
+    border-radius: 5px;
+    border: 1px solid;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: var(--dark_color)
+}
+.card img{
+    width: 80%;
+}
+.card h2{
+    text-align: center;
+}
 
+.--big-card{
+    max-width: unset;
+}
 
-.text{
+/*=====GENERALES=====*/
+p{
     padding: 0 20px ;
     font-size: 20px;
-   
 }
-.item_space{
-    padding-bottom: 1rem;
-    text-align: justify;
+a{
+    color: var(--second_highlight_color);
+}
+a:hover{
+    color: var(--highlight_color);
+}
+i{
+    color: var(--highlight_color);
+}
+.--text-center{
+    text-align: center; 
+}
+.title,.subtitle{
+    text-align: center;
+    padding-top: 1rem;
+}
+.title{
+    font-size: 30px;
+    margin: 15px;
+}
+.subtitle{
+    font-size: 25px;
+    margin: 10px;
+}
+.--bg-highlight-two{
+    background-color: var(--second_highlight_color);
+}
+.--bg-highlight-one{
+    background-color: var(--highlight_color);
+}
+.--highlight-one{
+    color: var(--highlight_color);
+}
+.border-top{
+    border-top: 1px solid var(--dark_color);
+}
+.--full_size{
+    max-width: 500px;
+}
+.--no_top_border_radius{
+    border-top-left-radius:0 ;
+    border-top-right-radius:0 ;
+}
+.container-to-read{
+    width: 100%;
+    max-width: 750px;
+    margin: 0 auto;
+    line-height: 1.5;
+    overflow-x: hidden;
+}
+/*=====CALL BUTTONS====*/
+.call-button{
+    text-align: center;
+    font-size: 1em;
+    padding: 1rem;
+    border-radius: 50vw;
+    background-color: var(--highlight_color);
+    text-decoration: none;
+    color: var(--light_color);
+    display: block;
+    transition: transform 0.3s ease;
+}
+.--call-small{
+    margin: 10px auto 0;
+    width: 200px;
+}
+.call-button:hover{
+    transform: scale(1.03);
+    color: var(--light_color);
+}
+.--card{
+    margin: 20px;
+    width: 50%;
+    padding: .7rem;
 }
 /*=====HEADER=====*/
 header{
@@ -52,7 +154,6 @@ header{
     padding: 1vh 0 ;
     z-index: 9999;
 }
-
 .header__nav ul{
     width: 100%;
     display: flex;
@@ -81,32 +182,66 @@ header{
 .hero{
     width: 100%;
     height: 80vh ;
-    background-image: url(https://www.ancient-origins.es/sites/default/files/field/image/Portada-diosa-romana-Minerva.jpg);
     background-size: cover;
     background-position: left;
     background-attachment: fixed;
     color: var(--light_color);
 }
-.hero__content{
+.--hero_cursos{
+    height:fit-content;
+}
+
+.hero__background{
     height: 100%;
     width: 100%;
     background-color: #000a;
+    
+}
+.hero__content{
+    width: 100%;
+    max-width: 800px;
+    margin: 0 auto;
+}
+.--hero-flex{
     text-align: center;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
 }
+.--hero-index{
+    background-image: url(https://www.ancient-origins.es/sites/default/files/field/image/Portada-diosa-romana-Minerva.jpg);
+    background-size: cover;
+}
+.--hero-cd{
+    background-image: url(https://i.ibb.co/4Vvq0SH/chaspi3713-Close-up-of-a-nautilus-shell-in-Art-Nouveau-style-6db687d9-cff0-4660-8151-a2f51fbbff7a.png);
+    background-size: cover;
+}
+.--colorfull{
+    background-color: rgba(55, 105, 150, 0.5);
+    
+}
 .relleno{
     width: 100%;
     height: 100vh;
 }
-.hero__frase{
+.hero__heading{
     margin: 0;
     font-size: 3em;
     padding: 5vh;
     font-weight: 500;
-    
+}
+.hero__subheading{
+    font-size: 1.4em;
+    padding: 0 5vh;
+}
+.hero__text{
+    font-size: 1.1em;
+    padding: 0 5vh 2vh;
+    line-height: 1.2;
+}
+.--less-padding-bottom{
+    padding: 5vh 5vh 0 5vh;
 }
 .hero__caption{
     padding: 0 7vh;
@@ -114,30 +249,40 @@ header{
     font-weight: 200;
 }
 
-/*=====BUTTONS=====*/
-.call-button{
-    font-size: 1em;
-    padding: 1rem;
-    border-radius: 50vw;
-    background-color: var(--highlight_color);
-    text-decoration: none;
-    color: var(--light_color);
-    display: block;
-    transition: transform 0.3s ease;
+/*=====VIDEOS=====*/
+.video-container {
+    width: 700px;
 }
-.call-button:hover{
-    transform: scale(1.03)
-}
-/*=====ABOUT=====*/
-#sobre_minerva{
-    display: flex;
-    align-items: center;
-    height: 100vh;
-}
+.video-responsive{
+    position: relative;
 
-.about__image img{
+    display: block;
     width: 100%;
-}
+  
+    padding: 0;
+    overflow: hidden;
+  
+    &::before {
+      padding-top: 56.25%;
+  
+      display: block;
+      content: "";
+    }
+  
+    box-sizing: border-box;
+  }
+  iframe {
+    position: absolute;
+  
+    top: 0;
+    bottom: 0;
+  
+    left: 0;
+    width: 100%;
+  
+    height: 100%;
+    border: 0;
+  }
 
 /*=====QUE QUIERES APRENDER=====*/
 #que_quieres_aprender{
@@ -148,58 +293,8 @@ header{
     align-items: center;
     justify-content: center;
 }
-.--card{
-    margin: 20px;
-    width: 50%;
-}
 
-.card-container{
-    width: 100%;
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: center;
-    gap: 20px;
-    padding: 20px;
-}
-.card{
-    width: 100%;
-    max-width: 300px;
-    border-radius: 5px;
-    border: 1px solid;
-    text-align: center;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-}
-.card img{
-    width: 80%;
-}
-.card h2{
-    text-align: center;
-}
-
-/*=====MATEMATICAS=====*/
-.container-to-read{
-    width: 100%;
-    max-width: 800px;
-    margin: 0 auto;
-}
-
-.asesorias-pasadas iframe{
-    width: 100%;
-    max-width: 560px;
-
-}
-.center{
-    width: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-
+/*======MEDIA QUERIES====*/
 @media screen and (max-width:1100px){
     #sobre_minerva{
         flex-direction:column;
@@ -211,85 +306,6 @@ header{
     .pad{
         padding-top: 5rem;
     }
-}
-/*=====TABLA DE POSICIONES=====*/
-.fila-tabla-posiciones{
-    padding: .8rem 0;
-    width: 100%;
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    font-size: 1.2em;
-    
-}
-.--cabecera-tabla-posiciones{
-    background-color: var(--highlight_color);
-    border-color: var(--highlight_color);
-    border-bottom-right-radius: 0;
-    border-bottom-left-radius: 0;
-    font-weight: 600;
-}
-.--top{
-    padding: 6px;
-    border: 1px solid ;
-    border-radius: 40%;
-}
-.--one{
-    padding: 8px;
-    background-color: gold;
-    border-color: gold;
-}
-.--two{
-    background-color: silver;
-    border-color: silver;
-    
-}
-.--three{
-    background-color: #c86417;
-    border-color: #c86417 ;
-    
-}
-.fila-tabla-posiciones__posicion{
-    
-    
-}
-.fila-tabla-posiciones__nombre{
-    
-}
-.fila-tabla-posiciones__puntos{
-   
-}
-.tabla-posiciones{
-    padding: 20px;
-}
-/*=====GENERALES=====*/
-.title,.subtitle{
-    text-align: center;
-    padding-top: 1rem;
-}
-.title{
-    font-size: 30px;
-}
-.subtitle{
-    font-size: 25px;
-}
-.--bg-highlight-two{
-    background-color: var(--second_highlight_color);
-}
-.--bg-highlight-one{
-    background-color: var(--highlight_color);
-}
-.--highlight-one{
-    color: var(--highlight_color);
-}
-.border-top{
-    border-top: 1px solid var(--dark_color);
-}
-.--full_size{
-    max-width: 100%;
-}
-.--no_top_border_radius{
-    border-top-left-radius:0 ;
-    border-top-right-radius:0 ;
 }
 
 @media screen and (max-width:500px) {
