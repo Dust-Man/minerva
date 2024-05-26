@@ -18,38 +18,7 @@ body{
     color: var(--dark_color);
 }
 
-/*=====CARD====*/
-.card-container{
-    width: 100%;
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: center;
-    gap: 20px;
-    padding: 20px;
-}
-.card{
-    width: 100%;
-    max-width: 300px;
-    border-radius: 5px;
-    border: 1px solid;
-    text-align: center;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    color: var(--dark_color)
-}
-.card img{
-    width: 80%;
-}
-.card h2{
-    text-align: center;
-}
 
-.--big-card{
-    max-width: unset;
-}
 
 /*=====GENERALES=====*/
 p{
@@ -105,6 +74,38 @@ i{
     margin: 0 auto;
     line-height: 1.5;
     overflow-x: hidden;
+}
+/*=====CARD====*/
+.card-container{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    padding: 20px;
+}
+.card{
+    width: 100%;
+    max-width: 300px;
+    border-radius: 5px;
+    border: 1px solid;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: var(--dark_color)
+}
+.card img{
+    width: 80%;
+}
+.card h2{
+    text-align: center;
+}
+
+.--big-card{
+    max-width: unset;
 }
 /*=====CALL BUTTONS====*/
 .call-button{
