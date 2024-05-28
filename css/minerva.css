@@ -164,6 +164,11 @@ header{
     background-color: var(--light_color);
     padding: 1vh 0 ;
     z-index: 9999;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    
 }
 .header__nav ul{
     width: 100%;
@@ -175,6 +180,7 @@ header{
     margin-block: 0;
     height: 100%;
     margin: 5px 0;
+    
 }
 .header__nav li{
     list-style: none;
@@ -188,6 +194,18 @@ header{
 }
 .header__nav a:hover {
     color: #DD7230;
+}
+.header__nav input{
+    border: 1px solid #ccc;
+    border-radius: 4px 0 0 4px; 
+    outline: none; 
+}
+.header__nav button{
+    border: 1px solid #ccc;
+    border-left: none; 
+    color: white; 
+    cursor: pointer;
+    border-radius: 0 4px 4px 0; 
 }
 /*=====HERO=====*/
 .hero{
