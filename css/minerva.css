@@ -255,6 +255,32 @@ header{
     font-weight: 200;
 }
 
+footer{
+    width: 100%;
+    border-top: 1px solid var(--dark_color);
+    position: relative;
+    bottom: 0;
+}
+footer>div{
+    width: 100%;
+}
+.footer__logo{
+    display: flex;
+    justify-content: center;
+}
+.footer__logo>img{
+    width: 300px;
+}
+.footer__redes{
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+}
+.footer__redes>a{
+    font-size: 1.2em;
+    padding: 1rem ;
+}
+
 /*=====VIDEOS=====*/
 .video-container {
     width: 700px;
