@@ -109,7 +109,11 @@ i{
 
 
 /*=====CALL BUTTONS====*/
-.call-button{
+input[type="submit"]{
+    border:none;
+    margin-top: 3em;
+}
+.call-button, input[type="submit"]{
     text-align: center;
     font-size: 1em;
     padding: 1rem;
@@ -124,7 +128,7 @@ i{
     margin: 10px auto 0;
     width: 200px;
 }
-.call-button:hover{
+.call-button:hover, input[type="submit"]:hover{
     transform: scale(1.03);
     color: var(--light_color);
 }
@@ -355,13 +359,21 @@ footer>div{
 
 .contenedor_calificaciones button:hover{
     cursor: pointer;
-    color: #376996;
-    
+    .fa-regular{
+        color: #376996;
+    } 
 }
 
 .contenedor_calificaciones i{
     font-size: 2em;
 }
+inpu[type="submit"]{
+
+}
+form{
+    padding-bottom: 1rem;
+}
+
 
 
 
