@@ -35,9 +35,8 @@ a:hover{
 i{
     color: var(--highlight_color);
 }
-.--text-center{
-    text-align: center; 
-}
+
+
 .title,.subtitle{
     text-align: center;
     padding-top: 1rem;
@@ -49,6 +48,13 @@ i{
 .subtitle{
     font-size: 25px;
     margin: 10px;
+}
+
+.--text-center{
+    text-align: center; 
+}
+.--text-left{
+    text-align: left;
 }
 
 .border-top{
@@ -372,6 +378,25 @@ inpu[type="submit"]{
 }
 form{
     padding-bottom: 1rem;
+}
+
+/*=====CURSO=====*/
+.indice-curso__lista{
+    list-style:lower-roman;
+}
+.indice-curso__lista li{
+    margin: 10px 0;
+}
+.indice-curso{
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.2em;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    margin:20px auto ;
 }
 
 
