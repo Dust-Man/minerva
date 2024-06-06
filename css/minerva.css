@@ -11,12 +11,14 @@
     box-sizing: border-box;
 }
 body{
+    
     margin: 0;
     background-color: var(--light_color);
     font-family: var(--principal_font);
     font-size: 1.1em;
     color: var(--dark_color);
     overflow-x: hidden;
+    min-height: 100vh;
 }
 
 
@@ -228,7 +230,8 @@ header{
     color: var(--light_color);
 }
 .--hero_cursos{
-    height:fit-content;
+    height: min-content;
+    
 }
 
 .hero__background{
@@ -290,11 +293,14 @@ header{
 }
 
 footer{
-    width: 100%;
     border-top: 1px solid var(--dark_color);
+    margin-top: auto;
     position: relative;
     bottom: 0;
+    width: 100%;
 }
+
+
 footer>div{
     width: 100%;
 }
@@ -318,6 +324,7 @@ footer>div{
 /*=====VIDEOS=====*/
 .video-container {
     width: 700px;
+    
 }
 .video-responsive{
     position: relative;
@@ -326,6 +333,7 @@ footer>div{
     width: 100%;
   
     padding: 0;
+    margin-bottom: 2rem;
     overflow: hidden;
   
     &::before {
@@ -333,9 +341,11 @@ footer>div{
   
       display: block;
       content: "";
+      
     }
   
     box-sizing: border-box;
+    
   }
   iframe {
     position: absolute;
@@ -348,6 +358,7 @@ footer>div{
   
     height: 100%;
     border: 0;
+    
   }
 
 /*=====ENCUESTA=====*/
@@ -437,6 +448,11 @@ form{
     .call-button{
         margin-bottom: 20px;
     }
+    footer{
+  
+    }
+
+    
     
 }
 

@@ -1,7 +1,36 @@
 <!doctype html><html ><head><title>Apuntes</title>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<link rel="stylesheet" href="../../../css/minerva.css">
+<script>
+  document.addEventListener("DOMContentLoaded", function() {
+    // Detectar si estamos en un entorno local o en GitHub Pages
+    var isLocal = window.location.hostname === 'localhost' || window.location.hostname === '127.0.0.1';
+    var baseURL = isLocal ? '/' : '/minerva/'; // Ajustar 'repo-name' al nombre de tu repositorio
+
+    // Actualizar todos los enlaces con rutas relativas, excepto los que tienen "localPath" en su data-hrefE
+    var updateLinkAttributes = function(selector, attribute) {
+      var elements = document.querySelectorAll(selector);
+      elements.forEach(function(element) {
+        var attrValue = element.getAttribute(attribute);
+        if (attrValue && !attrValue.startsWith('http') && !attrValue.startsWith('#') && !attrValue.includes("  ")) {
+          element.setAttribute(attribute, baseURL + attrValue);
+        }
+      });
+    };
+
+    // Actualizar data-href de enlaces
+    updateLinkAttributes('a[href]', 'href');
+
+    // Actualizar href de hojas de estilo
+    updateLinkAttributes('link[href]', 'href');
+
+    // Actualizar src de imágenes
+    updateLinkAttributes('img[src]', 'src');
+  });
+</script>
+ <link rel="icon" href="https://i.ibb.co/bv3YL8H/f-x-x2-5-x-1-2.png">
+ <link rel="stylesheet" href="css/minerva.css">
+ <script src="https://kit.fontawesome.com/67ae9cb33f.js" crossorigin="anonymous"></script>
 <link rel="icon" href="https://i.ibb.co/bv3YL8H/f-x-x2-5-x-1-2.png">
 
 <style>@font-face {
@@ -5348,13 +5377,13 @@ math-type compositeblock.bib-bibliography {
     <header>
       <div class="header__logo-container">
           <a href="index.html">
-              <img class="header__logo" src="/../../image-resources/minerva_large.svg">
+              <img class="header__logo" src="image-resources/minerva_large.svg">
           </a>
       </div>
   </header>
   <nav class="header__nav">
       <ul>
-        <a href="../calculo-diferencial-carlos-hp.html"><li>Regresar al curso</li></a>
+        <a href="  ../apuntes-desafios.html"><li>Regresar a la página de apuntes</li></a>
         
       </ul>
   </nav>
