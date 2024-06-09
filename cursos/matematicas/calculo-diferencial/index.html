@@ -47,12 +47,34 @@
     </header>
     <nav class="header__nav">
         <ul>
-            <a href="matematicas.html"><li>Matemáticas</li></a>
-            <a href="fisica.html"><li>Física</li></a>
-            <a href="programacion.html"><li>Programación</li></a>
-            <a href="autodidacta.html"><li>El Camino Autododidacta</li></a>
-        </ul>
-    </nav>
+              <button id="menu-button" >Cursos <i id="nav-caret" class="fa-solid fa-caret-down"></i></button>
+          </ul>
+          <div id="menu" class="menu-hidden" >
+            <div class="menu-grid">
+                <div id="menu-matematicas">
+                    <a href="matematicas.html" class="menu-link --link-title">
+                        Matemáticas
+                    </a>
+                    <a href="cursos/matematicas/calculo-diferencial/" class="menu-link">Cálculo Diferencial</a>
+                </div>
+                <div id="menu-fisica">
+                    <a href="fisica.html" class="menu-link --link-title">
+                        Física
+                    </a>
+                </div>
+                <div id="menu-programacion">
+                    <a href="programacion.html" class="menu-link --link-title">
+                        Programación
+                    </a>
+                </div>
+                <div id="">
+                    <a href="autodidacta.html" class="menu-link --link-title">
+                        Autodidacta
+                    </a>
+                </div>
+                </div>  
+            </div>
+      </nav>
         <section class="hero --hero-cd --hero_cursos">
                 <div class="hero__background --colorfull ">
                     <div class="hero__content">
@@ -108,4 +130,5 @@
             </div>
         </footer>
 </body>
+<script src="../../../menu.js"></script>
 </html>

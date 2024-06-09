@@ -11,14 +11,11 @@
     box-sizing: border-box;
 }
 body{
-    
     margin: 0;
     background-color: var(--light_color);
     font-family: var(--principal_font);
     font-size: 1.1em;
     color: var(--dark_color);
-    overflow-x: hidden;
-    min-height: 100vh;
 }
 
 
@@ -159,6 +156,7 @@ input[type="submit"]{
 header{
     width: 100%;
     margin-top: 5px;
+    
 }
 .header__logo-container{
     width: 100%;
@@ -175,12 +173,12 @@ header{
     position: sticky;
     top: 0;
     background-color: var(--light_color);
-    padding: 1vh 0 ;
     z-index: 9999;
-    display: flex;
+    padding: 10px;
+    /*display: flex;
     flex-direction: column;
-    justify-content: center;
-    align-items: center;
+    justify-content: space-around;
+    align-items: center;*/
     
 }
 .header__nav ul{
@@ -201,7 +199,7 @@ header{
     color: var(--dark_color);
 
 }
-.header__nav a{
+/*.header__nav a{
     text-decoration: underline;
     color: #292928;
 }
@@ -212,7 +210,7 @@ header{
     border: 1px solid #ccc;
     border-radius: 4px 0 0 4px; 
     outline: none; 
-}
+}*/
 .header__nav button{
     border: 1px solid #ccc;
     border-left: none; 
@@ -409,6 +407,57 @@ form{
     border-radius: 5px;
     margin:20px auto ;
 }
+#menu-button{
+    font-family: var(--principal_font);
+    font-size: 20px;
+    color: #376996;
+    background-color:var(--light_color) ;
+    margin-left: 1rem;
+    border: none;
+}
+#menu {
+    background: var(--light_color);
+    border-bottom: 1px solid var(--dark_color);
+    border-top: 1px solid var(--dark_color);
+    width: 100%;
+    position: absolute;
+    margin-top: 10px;
+    top: 10;
+    left: 0;
+    z-index: 1;
+}
+.menu-grid{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+.menu-link{
+    display: block;
+    text-decoration: unset;
+    color: var(--second_highlight_color);
+    margin: .5rem 0;
+    text-align: center;
+}
+.menu-link:hover{
+   text-decoration: underline; 
+   color: var(--second_highlight_color);
+}
+.--link-title{
+    color: var(--highlight_color);
+    font-size: 1.2em;
+}
+.--link-title:hover{
+    color: var(--highlight_color);
+}
+
+
+
+.menu-hidden{
+    display: none;
+}
+.menu-show{
+    display: block;
+}
+
 
 
 
@@ -437,6 +486,10 @@ form{
     }
 }
 
+
+
+
+
 @media screen and (max-width:500px) {
     .header__logo{
         width: 100%;
@@ -448,8 +501,8 @@ form{
     .call-button{
         margin-bottom: 20px;
     }
-    footer{
-  
+    .menu-grid{
+        grid-template-columns: 1fr;
     }
 
     
